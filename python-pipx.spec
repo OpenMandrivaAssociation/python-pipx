@@ -1,6 +1,6 @@
 Name:		python-pipx
 Version:	1.7.1
-Release:	2
+Release:	3
 Source0:	https://files.pythonhosted.org/packages/source/p/pipx/pipx-%{version}.tar.gz
 Summary:	Install and Run Python Applications in Isolated Environments
 URL:		https://pypi.org/project/pipx/
