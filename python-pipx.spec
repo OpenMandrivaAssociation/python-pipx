@@ -1,7 +1,7 @@
 %define module pipx
 
 Name:		python-pipx
-Version:	1.8.0
+Version:	1.9.0
 Release:	1
 Summary:	Install and Run Python Applications in Isolated Environments
 URL:		https://pypi.org/project/pipx/
@@ -10,9 +10,9 @@ URL:		https://pypi.org/project/pipx/
 Source0:	https://github.com/pypa/pipx/archive/%{version}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
+
 BuildSystem:	python
 BuildArch:	noarch
-
 BuildRequires:	python
 BuildRequires:	python%{pyver}dist(build)
 BuildRequires:	python%{pyver}dist(hatch-vcs)
