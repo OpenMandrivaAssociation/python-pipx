@@ -1,13 +1,13 @@
 %define module pipx
 
 Name:		python-pipx
-Version:	1.9.0
+Version:	1.10.0
 Release:	1
 Summary:	Install and Run Python Applications in Isolated Environments
 URL:		https://pypi.org/project/pipx/
 # The pypi sources do not provide scipts used in man generation are not provided as part of
 # the pypi source tarball
-Source0:	https://github.com/pypa/pipx/archive/%{version}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:	https://github.com/pypa/pipx/archive/%{version}/%{name}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 
