@@ -1,7 +1,7 @@
 %define module pipx
 
 Name:		python-pipx
-Version:	1.14.0
+Version:	1.16.5
 Release:	1
 Summary:	Install and Run Python Applications in Isolated Environments
 URL:		https://pypi.org/project/pipx/
