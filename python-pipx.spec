@@ -35,7 +35,7 @@ export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %build -a
 # Generate man pages for binaries
-PYTHONPATH="${PWD}/src" %{__python3} scripts/generate_man.py
+PYTHONPATH="${PWD}/src" %{__python} scripts/generate_man.py
 # As per the output of running 'pipx completions' in order to generate shell
 # completions as described in its documentation:
 # https://pipx.pypa.io/stable/installation/#shell-completion
