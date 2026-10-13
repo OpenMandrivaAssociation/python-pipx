@@ -38,8 +38,10 @@ Install and Run Python Applications in Isolated Environments.
 export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %build -a
-# Generate man pages for binaries
+# Generate man pages for binaries. generate_man.py writes reStructuredText;
+# the hatch build hook is what turns that into troff, and it already ran.
 PYTHONPATH="${PWD}/src" %{__python} scripts/generate_man.py
+%{__python} -c 'from docutils.core import publish_string; from pathlib import Path; text = Path("docs/man/pipx.1.rst").read_text(encoding="utf-8"); text = "\n".join(line for line in text.splitlines() if line.strip() != ":orphan:"); Path("pipx.1").write_bytes(publish_string(text, writer="manpage", settings_overrides={"report_level": 5}))'
 # As per the output of running 'pipx completions' in order to generate shell
 # completions as described in its documentation:
 # https://pipx.pypa.io/stable/installation/#shell-completion
