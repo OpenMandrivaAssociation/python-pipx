@@ -24,6 +24,9 @@ BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(argcomplete)
 BuildRequires:	python%{pyver}dist(argparse-manpage)
 BuildRequires:	python%{pyver}dist(docutils)
+BuildRequires:	python%{pyver}dist(filelock)
+BuildRequires:	python%{pyver}dist(packaging)
+BuildRequires:	python%{pyver}dist(platformdirs)
 BuildRequires:	python%{pyver}dist(userpath) >= 1.6
 Requires:	python%{pyver}dist(userpath) >= 1.6
 
