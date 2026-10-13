@@ -23,6 +23,7 @@ BuildRequires:	python%{pyver}dist(wheel)
 # BRs for generating completions and man pages
 BuildRequires:	python%{pyver}dist(argcomplete)
 BuildRequires:	python%{pyver}dist(argparse-manpage)
+BuildRequires:	python%{pyver}dist(docutils)
 BuildRequires:	python%{pyver}dist(userpath) >= 1.6
 Requires:	python%{pyver}dist(userpath) >= 1.6
 
